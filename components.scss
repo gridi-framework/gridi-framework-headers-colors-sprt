@@ -1,0 +1,16 @@
+@each $palette-color-prefix, $palette-color-variables in get-colors-palette($headers-colors-support-extra-colors-palette, $headers-colors-support-skip-colors-palette) {
+    .#{$colors-class-prefix}-#{$palette-color-prefix} h1,
+    .#{$colors-class-prefix}-#{$palette-color-prefix} h2,
+    .#{$colors-class-prefix}-#{$palette-color-prefix} h3,
+    .#{$colors-class-prefix}-#{$palette-color-prefix} h4,
+    .#{$colors-class-prefix}-#{$palette-color-prefix} h5,
+    .#{$colors-class-prefix}-#{$palette-color-prefix} h6,
+    h1.#{$colors-class-prefix}-#{$palette-color-prefix},
+    h2.#{$colors-class-prefix}-#{$palette-color-prefix},
+    h3.#{$colors-class-prefix}-#{$palette-color-prefix},
+    h4.#{$colors-class-prefix}-#{$palette-color-prefix},
+    h5.#{$colors-class-prefix}-#{$palette-color-prefix},
+    h6.#{$colors-class-prefix}-#{$palette-color-prefix} {
+        color: map_get($palette-color-variables, map_get($headers-colors-support-parser, color));
+    }
+}
