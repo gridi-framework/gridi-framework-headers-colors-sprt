@@ -11,6 +11,6 @@
     h4.#{$colors-class-prefix}-#{$palette-color-prefix},
     h5.#{$colors-class-prefix}-#{$palette-color-prefix},
     h6.#{$colors-class-prefix}-#{$palette-color-prefix} {
-        @include include-h1-h6-colors(parse-map($headers-colors-support-parser, $palette-color-variables));
+        @include h1-h6-colors-propertys(parse-map($headers-colors-support-parser, $palette-color-variables));
     }
 }
